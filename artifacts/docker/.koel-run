@@ -1,0 +1,1 @@
+docker run -d --name koel-music-atomicapp -p 80:8000 --link mariadb-atomicapp-app:mariadb -e DB_CONNECTION=mysql -e DB_HOST=mariadb:3306 -e DB_DATABASE=u -e DB_USERNAME=u -e DB_PASSWORD=u -e ADMIN_EMAIL=u@u.com -e ADMIN_NAME=u -e ADMIN_PASSWORD=u -v /home/vagrant/Music:/home/vagrant/Music:Z koel-server
